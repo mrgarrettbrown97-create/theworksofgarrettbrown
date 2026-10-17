@@ -18,6 +18,7 @@ body{margin:0;background:#121211;background-image:radial-gradient(ellipse 80% 50
 a{color:#FAFAFA;text-decoration:none}
 a:hover{color:#56CFE1}
 .ms{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;font-feature-settings:'liga'}
+summary::-webkit-details-marker{display:none}
 </style>
 </helmet>
 
@@ -28,7 +29,10 @@ a:hover{color:#56CFE1}
     <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.02em">Garrett Brown</a>
     <div style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap">
       <a href="index.html">Home</a>
-      <a href="index.html#case-studies">Case Studies</a>
+      <details style="position:relative">
+        <summary style="list-style:none;cursor:pointer;display:flex;align-items:center;gap:2px" style-hover="color:#56CFE1">Case Studies<span class="ms" style="font-size:20px">expand_more</span></summary>
+        <div style="position:absolute;top:calc(100% + 12px);left:-14px;min-width:260px;padding:6px;border-radius:12px;background:rgba(26,26,24,.96);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 40px rgba(0,0,0,.5);display:flex;flex-direction:column;z-index:20"><a href="dishmatch.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Dishmatch</a><a href="thread.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#56CFE1" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Accuris Thread</a><a href="smart-search.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Smart Search</a><a href="focus-hope.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Focus: HOPE</a><div style="height:1px;background:rgba(255,255,255,.08);margin:6px 8px"></div><span style="padding:6px 14px 4px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.06em;color:#8E8E89">OTHER PROJECTS</span><a href="style-guide.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Focus: HOPE Style Guide</a><a href="phaser.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Angular Phaser Game Launcher</a><a href="movie-app.html" style="display:block;padding:10px 14px;border-radius:8px;font-size:15px;font-weight:500;color:#FAFAFA" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">Angular Movie App</a><div style="height:1px;background:rgba(255,255,255,.08);margin:6px 8px"></div><a href="index.html#case-studies" style="display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:500;color:#8E8E89" style-hover="background:rgba(255,255,255,.06);color:#56CFE1">View all</a></div>
+      </details>
       <a href="about.html">About</a>
       <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
     </div>
