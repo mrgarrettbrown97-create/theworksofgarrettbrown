@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#121211;background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(86,207,225,.08),transparent 60%);background-attachment:fixed;color:#FAFAFA;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FAFAFA;text-decoration:none}
+a:hover{color:#56CFE1}
+.ms{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;font-feature-settings:'liga'}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="position:sticky;top:0;z-index:10;background:rgba(18,18,17,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)">
+  <nav style="max-width:1200px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.02em">Garrett Brown</a>
+    <div style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </nav>
+</header>
+
+<main style="flex:1">
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(48px,8vw,96px) 32px clamp(56px,7vw,88px);display:flex;flex-wrap:wrap;gap:48px 72px;align-items:center">
+  <div style="flex:3 1 480px;min-width:0;display:flex;flex-direction:column;gap:24px">
+    <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">person</span>About me</span>
+    <h1 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(38px,5.6vw,72px);line-height:1.04;letter-spacing:-.035em;max-width:16ch;text-wrap:balance">Making complicated things easy to understand</h1>
+    <p style="margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.65;color:#B5B5B0;text-wrap:pretty;max-width:62ch">I'm a UI/UX designer. I've worked at a nonprofit in Detroit and at an international company with Fortune 500 clients, two jobs with very little in common. That range shapes how I work, and I'm comfortable with teams and clients of any size. I want my work to pay for itself by making complicated things easy to understand.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;padding-top:4px">
+      <a href="mailto:garrett.brown944@gmail.com" style="display:flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)"><span class="ms" style="font-size:20px">id_card</span>Get in touch</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-weight:500;font-size:15px" style-hover="border-color:#FAFAFA"><span class="ms" style="font-size:20px">description</span>Resume</a>
+    </div>
+  </div>
+  <div style="flex:1 1 280px;max-width:400px;min-width:0">
+    <image-slot id="about-headshot" shape="rounded" radius="28" placeholder="Drop a headshot" style="width:100%;aspect-ratio:4/5;height:auto"></image-slot>
+  </div>
+</section>
+
+<section style="background:#0B0B0C;color:#FAFAFA">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 32px;display:flex;flex-direction:column;gap:44px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">editor_choice</span>Career highlights</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1.05">So far</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px 48px">
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18)"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(44px,5vw,64px);letter-spacing:-.035em;line-height:1">~20%</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#56CFE1">FIRST-PASS ACCURACY</span><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Raised engineers' first-pass accuracy by about 20% as design lead on a major product.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18)"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(44px,5vw,64px);letter-spacing:-.035em;line-height:1">Microsoft</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#56CFE1">NONPROFIT PARTNERSHIP</span><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Ran user interviews and drafted lo-fi prototypes for a learning platform built by a nonprofit and Microsoft.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18)"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(44px,5vw,64px);letter-spacing:-.035em;line-height:1">$15K+</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#56CFE1">RAISED IN 2 YEARS</span><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Raised over $15,000 in donations with user and market research strategies I planned and ran.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 32px;display:flex;flex-direction:column;gap:40px;width:100%;box-sizing:border-box">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">task_alt</span>How I work</span>
+    <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1.05">What I bring to a project</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px;align-items:stretch">
+    <div style="padding:clamp(28px,3vw,36px);border-radius:24px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:16px;min-width:0"><span style="width:52px;height:52px;border-radius:14px;background:#1F1F1D;display:flex;align-items:center;justify-content:center"><span class="ms" style="font-size:28px;color:#56CFE1">quick_reference_all</span></span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em">Qualitative research</h3><p style="margin:0;font-size:16px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">My research methods are user interviews, observation, action research, and content analysis. Most projects get some mix of them.</p></div>
+    <div style="padding:clamp(28px,3vw,36px);border-radius:24px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:16px;min-width:0"><span style="width:52px;height:52px;border-radius:14px;background:#1F1F1D;display:flex;align-items:center;justify-content:center"><span class="ms" style="font-size:28px;color:#56CFE1">route</span></span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em">Design process</h3><p style="margin:0;font-size:16px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">My process follows the standard UX steps, adjusted over time. I figure out what stakeholders and users are struggling with, map user flows, wireframe, research, build mockups and prototypes, run usability tests, work with developers, and make changes based on both data and what people tell me.</p></div>
+    <div style="padding:clamp(28px,3vw,36px);border-radius:24px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:16px;min-width:0"><span style="width:52px;height:52px;border-radius:14px;background:#1F1F1D;display:flex;align-items:center;justify-content:center"><span class="ms" style="font-size:28px;color:#56CFE1">favorite</span></span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em">Empathy</h3><p style="margin:0;font-size:16px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">I try to design for as many needs and user groups as I can. When people can tell a product was made with them in mind, they trust it and keep using it. Paying close attention to users also stops me from relying on assumptions, and it's how I find the pain points nobody mentions up front.</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:40px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Garrett Brown</span><span style="font-size:14px;color:#8E8E89">Front-end & UX designer · Freelance</span></div>
+    <div style="display:flex;gap:24px;font-size:14px;font-weight:500;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-size:14px;color:#8E8E89"><a href="mailto:garrett.brown944@gmail.com">garrett.brown944@gmail.com</a><a href="https://www.linkedin.com/in/garrettbrowndev/">LinkedIn</a><span>© 2026 – Garrett Brown</span></div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+</body>
+</html>

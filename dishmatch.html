@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#121211;background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(86,207,225,.08),transparent 60%);background-attachment:fixed;color:#FAFAFA;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FAFAFA;text-decoration:none}
+a:hover{color:#56CFE1}
+.ms{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;font-feature-settings:'liga'}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="position:sticky;top:0;z-index:10;background:rgba(18,18,17,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)">
+  <nav style="max-width:1200px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.02em">Garrett Brown</a>
+    <div style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </nav>
+</header>
+
+<main style="flex:1">
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(48px,8vw,96px) 32px 40px;display:flex;flex-direction:column;gap:20px">
+  <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">work</span>Personal project · Case study</span>
+  <h1 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(38px,5.6vw,72px);line-height:1.04;letter-spacing:-.035em;max-width:18ch;text-wrap:balance">Dishmatch: finding somewhere to sit down and eat</h1>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:0 32px;width:100%;box-sizing:border-box">
+  <div style="background:#1F1F1D;border-radius:28px;padding:clamp(24px,5vw,64px);display:flex;justify-content:center">
+    <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/72333f56-b983-4307-bd65-51eb3f3036b8_rwc_323x0x1270x716x1270.png?h=566a7f20d5a99d21c6facd6cfbe4929f" alt="Dishmatch app screens" style="width:100%;max-width:880px;border-radius:18px;box-shadow:0 30px 70px -24px rgba(0,0,0,.55);display:block">
+  </div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px;display:flex;flex-wrap:wrap;gap:48px 72px">
+  <div style="display:flex;flex-direction:column;gap:18px;flex:2 1 480px;min-width:0">
+    <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:32px;letter-spacing:-.025em">Overview</h2>
+    <p style="margin:0;font-size:18px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">Dishmatch is a mobile app for finding food nearby. Some people want something quick and specific. Others want a long list to browse and narrow down. It handles both. I also used the project to try a new way of working: designing with Claude Code connected to Figma through the Figma MCP server.</p>
+    <p style="margin:0;font-size:16px;font-weight:600">Goals:</p>
+    <ol style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:17px;line-height:1.55;color:#B5B5B0">
+      <li>Help people find places to sit down and eat, as well as delivery.</li>
+      <li>Let users filter by cuisine, format, and occasion in one view.</li>
+      <li>Test whether going back and forth between AI and Figma speeds up hi-fi prototyping.</li>
+    </ol>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px 24px;align-content:start;align-self:flex-start;flex:1 1 300px;min-width:0;padding:28px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">ROLE</span><span style="font-size:16px;line-height:1.45">Sole designer</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">TIMELINE</span><span style="font-size:16px;line-height:1.45">Mar 23 – Apr 1, 2026</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">RESPONSIBILITIES</span><span style="font-size:16px;line-height:1.45">Research, UX & UI design, prototyping</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">TOOLS</span><span style="font-size:16px;line-height:1.45">Figma, Figma MCP server, Claude Code</span></div>
+  </div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:0 32px clamp(56px,7vw,88px);display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+    <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:32px;letter-spacing:-.025em">The challenge</h2>
+    <p style="margin:0;font-size:18px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">Most people search for food through a browser or a delivery app like DoorDash or Uber Eats. You can search for specific foods or cuisines, but the filters are built for ordering. They don't help much if you want a restaurant to actually go to.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px">
+    <div style="padding:28px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:28px;color:#56CFE1">format_quote</span><p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:22px;line-height:1.3;letter-spacing:-.01em">"But I want somewhere to sit down."</p></div>
+    <div style="padding:28px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:28px;color:#56CFE1">format_quote</span><p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:22px;line-height:1.3;letter-spacing:-.01em">"I want to choose between Mexican or Japanese food."</p></div>
+    <div style="padding:28px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:28px;color:#56CFE1">format_quote</span><p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:22px;line-height:1.3;letter-spacing:-.01em">"I have to search Google anytime I want something specific."</p></div>
+  </div>
+  <div style="padding:clamp(28px,4vw,48px);border-radius:24px;background:#0B0B0C;color:#FAFAFA;display:flex;flex-direction:column;gap:14px">
+    <span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#56CFE1">PROBLEM TO SOLVE</span>
+    <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(24px,2.8vw,36px);line-height:1.2;letter-spacing:-.02em;max-width:30ch;text-wrap:balance">It's hard to find places to eat beyond takeout. Current apps don't let you filter for the kind of meal you want.</p>
+  </div>
+</section>
+
+<section style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px;display:flex;flex-direction:column;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">quick_reference_all</span>Research</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-.03em;line-height:1.05">Gathering insights</h2>
+      <p style="margin:0;font-size:18px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">I looked at Google, DoorDash, and Uber Eats to see where they fall short for people who want more than takeout. Then I interviewed 10 people and turned the most common problems into personas and user journeys.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <span style="padding:10px 16px;border-radius:999px;background:#1A1A18;border:1px solid rgba(255,255,255,.1);font-weight:500;font-size:15px">Competitive analysis</span><span class="ms" style="font-size:20px;color:#8E8E89">arrow_forward</span>
+      <span style="padding:10px 16px;border-radius:999px;background:#1A1A18;border:1px solid rgba(255,255,255,.1);font-weight:500;font-size:15px">10 interviews</span><span class="ms" style="font-size:20px;color:#8E8E89">arrow_forward</span>
+      <span style="padding:10px 16px;border-radius:999px;background:#1A1A18;border:1px solid rgba(255,255,255,.1);font-weight:500;font-size:15px">Personas</span><span class="ms" style="font-size:20px;color:#8E8E89">arrow_forward</span>
+      <span style="padding:10px 16px;border-radius:999px;background:#1A1A18;border:1px solid rgba(255,255,255,.1);font-weight:500;font-size:15px">Journey mapping</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px">
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">PERSONA 1</span><image-slot id="dm-persona-1" shape="rounded" radius="18" placeholder="Drop persona image" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">PERSONA 2</span><image-slot id="dm-persona-2" shape="rounded" radius="18" placeholder="Drop persona image" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">USER JOURNEY 1</span><image-slot id="dm-journey" shape="rounded" radius="18" placeholder="Drop journey map" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">USER JOURNEY 2</span><image-slot id="dm-journey-2" shape="rounded" radius="18" placeholder="Drop journey map" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+    </div>
+    <div style="padding:clamp(28px,4vw,48px);border-radius:24px;background:#1F1F1D;display:flex;flex-direction:column;gap:14px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#56CFE1">HOW MIGHT WE</span>
+      <p style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(24px,2.8vw,36px);line-height:1.2;letter-spacing:-.02em;max-width:32ch;text-wrap:balance">How might we help people find the right kind of meal, quick or sit-down, now or later, in one place that's easy to get around?</p>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px;display:flex;flex-direction:column;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">lightbulb_2</span>Ideation & design</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-.03em;line-height:1.05">Going back and forth between AI and Figma</h2>
+      <p style="margin:0;font-size:18px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">I started by sketching problems and solutions on paper, which settled the core features, filters, and workflow. I turned those into structured prompts for Claude Code and added a custom rule so Claude could check reference images in a folder while refining its output.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+      <div style="padding:24px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#56CFE1">01</span><span style="font-weight:600;font-size:17px">Sketches</span><span style="font-size:15px;line-height:1.5;color:#8E8E89">Brainstorming issues and solutions on paper.</span></div>
+      <div style="padding:24px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#56CFE1">02</span><span style="font-weight:600;font-size:17px">Claude Code mockups</span><span style="font-size:15px;line-height:1.5;color:#8E8E89">Prompts produce a working base and prototype.</span></div>
+      <div style="padding:24px;border-radius:20px;background:#1A1A18;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:10px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#56CFE1">03</span><span style="font-weight:600;font-size:17px">Hi-fi in Figma</span><span style="font-size:15px;line-height:1.5;color:#8E8E89">Via MCP: named components, local components, refined tokens.</span></div>
+      <div style="padding:24px;border-radius:20px;background:#0B0B0C;color:#FAFAFA;display:flex;flex-direction:column;gap:10px"><span style="display:flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#56CFE1">04<span class="ms" style="font-size:24px">autorenew</span></span><span style="font-weight:600;font-size:17px">Feedback loop</span><span style="font-size:15px;line-height:1.5;color:#B5B5B0">Push updates back to Claude, add features, re-import, refine.</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">SKETCHES</span><image-slot id="dm-sketch" shape="rounded" radius="18" placeholder="Drop sketches" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">INITIAL PROMPT YIELD</span><image-slot id="dm-prompt" shape="rounded" radius="18" placeholder="Drop Claude Code output" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">FIGMA REFINEMENT</span><image-slot id="dm-figma" shape="rounded" radius="18" placeholder="Drop Figma file screenshot" style="width:100%;aspect-ratio:4/3;height:auto"></image-slot></div>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">editor_choice</span>Final design</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-.03em;line-height:1.05">The prototype</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 64px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:28px;letter-spacing:-.02em">Robust filter suite</h3>
+        <p style="margin:0;font-size:17px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">Set results to match what you're in the mood for. Want an Indian or Korean food truck nearby for lunch and a nice sit-down Japanese place for dinner? Dishmatch shows both on one screen.</p>
+      </div>
+      <div style="background:#1F1F1D;border-radius:24px;padding:32px;display:flex;justify-content:center;gap:16px">
+        <image-slot id="dm-filter-1" shape="rounded" radius="28" placeholder="Phone screen" style="width:44%;aspect-ratio:9/19.5;height:auto"></image-slot>
+        <image-slot id="dm-filter-2" shape="rounded" radius="28" placeholder="Phone screen" style="width:44%;aspect-ratio:9/19.5;height:auto"></image-slot>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 64px;align-items:center">
+      <div style="background:#1F1F1D;border-radius:24px;padding:32px;display:flex;justify-content:center;gap:16px">
+        <image-slot id="dm-save-1" shape="rounded" radius="28" placeholder="Phone screen" style="width:44%;aspect-ratio:9/19.5;height:auto"></image-slot>
+        <image-slot id="dm-save-2" shape="rounded" radius="28" placeholder="Phone screen" style="width:44%;aspect-ratio:9/19.5;height:auto"></image-slot>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:28px;letter-spacing:-.02em">View and save</h3>
+        <p style="margin:0;font-size:17px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">Each restaurant page puts the ordering details first. Save a place to come back to later, and remove it when you're done.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">USER FLOW MAP</span><image-slot id="dm-flow" shape="rounded" radius="18" placeholder="Drop user flow map" style="width:100%;aspect-ratio:21/9;height:auto"></image-slot></div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a href="https://gbrown944.github.io/dishmatch.github.io/" style="display:flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)"><span class="ms" style="font-size:20px">arrow_forward</span>View prototype</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0B0B0C;color:#FAFAFA">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 32px;display:flex;flex-direction:column;gap:44px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">monitoring</span>Impact & next steps</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-.03em;line-height:1.05">Where it stands</h2>
+      <p style="margin:0;font-size:18px;line-height:1.65;color:#B5B5B0;text-wrap:pretty">Early feedback has been good. Next up is usability testing to see whether Dishmatch actually makes it easier to find somewhere to eat. I now use the same Figma MCP and Claude Code workflow for prototypes and redesigns as Staff UI/UX Designer at Democracy First.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:32px">
+      <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;letter-spacing:-.03em">10</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#B5B5B0">USER INTERVIEWS</span></div>
+      <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;letter-spacing:-.03em">9 days</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#B5B5B0">CONCEPT TO HI-FI PROTOTYPE</span></div>
+      <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;letter-spacing:-.03em">3</span><span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#B5B5B0">TOOLS IN ONE LOOP</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px">
+      <div style="padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:26px;color:#56CFE1">bolt</span><span style="font-weight:600;font-size:17px">Faster ordering</span><span style="font-size:15px;line-height:1.5;color:#B5B5B0">Help users go from discovery to order in fewer steps.</span></div>
+      <div style="padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:26px;color:#56CFE1">nutrition</span><span style="font-weight:600;font-size:17px">Dietary filters</span><span style="font-size:15px;line-height:1.5;color:#B5B5B0">Restructure filters to include dietary restrictions.</span></div>
+      <div style="padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:10px"><span class="ms" style="font-size:26px;color:#56CFE1">collections_bookmark</span><span style="font-weight:600;font-size:17px">Saved collections</span><span style="font-size:15px;line-height:1.5;color:#B5B5B0">Let users group saved restaurants into collections.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px;display:flex;flex-direction:column;gap:28px;width:100%;box-sizing:border-box">
+  <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">work</span>Next case study</span>
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:20px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Accuris · 2024–2025</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Accuris Thread: uploading documents and managing requirement projects</h3>
+      <div style="display:flex;gap:40px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;letter-spacing:-.03em">90%</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">TIME SAVED DEFINING REQUIREMENTS</span></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;letter-spacing:-.03em">90%</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">DECOMPOSITION ACCURACY</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:auto">
+        <a href="thread.html" style="padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)">View case study</a>
+      </div>
+    </div>
+    <div style="background:#1F1F1D;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:280px">
+      <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/19345d8a-af5c-49a7-b019-dd5f18e91000_car_16x9.png?h=cc63949c53559c3349a96d4bdebb616e" alt="Accuris Thread screens" style="width:100%;max-width:520px;border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);display:block">
+    </div>
+  </article>
+</section>
+
+</main>
+
+<footer style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:40px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Garrett Brown</span><span style="font-size:14px;color:#8E8E89">Front-end & UX designer · Freelance</span></div>
+    <div style="display:flex;gap:24px;font-size:14px;font-weight:500;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-size:14px;color:#8E8E89"><a href="mailto:garrett.brown944@gmail.com">garrett.brown944@gmail.com</a><a href="https://www.linkedin.com/in/garrettbrowndev/">LinkedIn</a><span>© 2026 – Garrett Brown</span></div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+</body>
+</html>

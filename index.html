@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#121211;background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(86,207,225,.08),transparent 60%);background-attachment:fixed;color:#FAFAFA;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FAFAFA;text-decoration:none}
+a:hover{color:#56CFE1}
+.ms{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;-webkit-font-feature-settings:'liga';font-feature-settings:'liga'}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="position:sticky;top:0;z-index:10;background:rgba(18,18,17,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)">
+  <nav style="max-width:1200px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.02em">Garrett Brown</a>
+    <div style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap">
+      <a href="#top">Home</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" style="flex:1">
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(56px,10vw,120px) 32px clamp(56px,8vw,96px);display:flex;flex-direction:column;gap:36px">
+  <div style="display:flex;align-items:baseline;gap:4px;font-size:18px;font-weight:500;color:#8E8E89">
+    <span style="color: #FFFFFF">Welcome! I'm Garrett</span>
+    <span style="width:5px;height:5px;background:#56CFE1;flex-shrink:0"></span>
+  </div>
+  <h1 style="margin:0;display:grid;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(40px,6.4vw,84px);line-height:1.04;letter-spacing:-.035em;max-width:16ch;text-wrap:balance">
+    <sc-for list="{{ lines }}" as="l" hint-placeholder-count="1">
+      <span style="grid-area:1/1;opacity:{{ l.o }};transform:translateY({{ l.y }}px);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1)">{{ l.text }}</span>
+    </sc-for>
+  </h1>
+  <p style="margin:0;max-width:62ch;font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:#B5B5B0;text-wrap:pretty">As a Front-End and User Experience designer, I pride myself in being able to offer the full suite in terms of software code and design. I don't just know how to build functional products, I know how to design them to be easy to use.</p>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding-top:8px">
+    <span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">GET IN TOUCH</span>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <a href="mailto:garrett.brown944@gmail.com" style="display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)"><span class="ms" style="font-size:20px">id_card</span>garrett.brown944@gmail.com</a>
+      <a href="https://www.linkedin.com/in/garrettbrowndev/" style="display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-weight:500;font-size:15px" style-hover="border-color:#FAFAFA">LinkedIn</a>
+    </div>
+    <span style="display:flex;align-items:center;gap:6px;font-size:15px;color:#8E8E89"><span class="ms" style="font-size:20px">home_pin</span>Detroit, MI</span>
+  </div>
+</section>
+
+<section id="case-studies" style="max-width:1200px;margin:0 auto;padding:24px 32px 96px;scroll-margin-top:72px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">cases</span>Case Studies</span>
+    <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1.05">What I've designed recently</h2>
+  </div>
+
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:22px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Democracy First · 2026</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">DFan</h3>
+      <span style="align-self:flex-start;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#262623;font-size:14px;font-weight:600"><span class="ms" style="font-size:18px">schedule</span>Coming soon</span>
+    </div>
+    <div style="background:#262623;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:320px">
+      <div style="width:547px;max-width:100%;height:342px;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);background:#fff;position:relative">
+        <iframe src="https://dfan-prototype.vercel.app/?page=start" title="DFan prototype hero" loading="lazy" tabindex="-1" scrolling="no" style="position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform:scale(.38);transform-origin:0 0;pointer-events:none"></iframe>
+      </div>
+    </div>
+  </article>
+
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:22px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Personal project · 2026</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Dishmatch: finding somewhere to sit down and eat</h3>
+      <p style="margin:0;font-size:17px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">A mobile app for finding sit-down restaurants, food trucks, and takeout nearby. I built it by going back and forth between Claude Code and Figma through MCP.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">0 to 1 Design</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">AI-assisted workflow</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Mobile</span>
+      </div>
+      <div style="display:flex;gap:40px;padding:6px 0">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.03em">10</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">USER INTERVIEWS</span></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.03em">9 days</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">CONCEPT TO PROTOTYPE</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:auto">
+        <a href="dishmatch.html" style="padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)">View case study</a>
+        <a href="https://gbrown944.github.io/dishmatch.github.io/" style="display:flex;align-items:center;gap:6px;padding:13px 18px;font-weight:500;font-size:15px"><span class="ms" style="font-size:20px">arrow_forward</span>View prototype</a>
+      </div>
+    </div>
+    <div style="background:#1F1F1D;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:320px">
+      <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/72333f56-b983-4307-bd65-51eb3f3036b8_rwc_323x0x1270x716x1270.png?h=566a7f20d5a99d21c6facd6cfbe4929f" alt="Dishmatch app screens" style="width:100%;max-width:560px;border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);display:block">
+    </div>
+  </article>
+
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:22px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Accuris · 2024–2025</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Accuris Thread: uploading documents and managing requirement projects</h3>
+      <p style="margin:0;font-size:17px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">The upload workflow and project management experience for an enterprise platform, from organizing stories and epics to local components and hi-fi prototypes.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Workflow design</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Enterprise SaaS</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Web</span>
+      </div>
+      <div style="display:flex;gap:40px;padding:6px 0;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.03em">90%</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">TIME SAVED DEFINING REQUIREMENTS</span></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.03em">90%</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">DECOMPOSITION ACCURACY</span></div>
+      </div>
+      <span style="font-size:13px;color:#8E8E89;margin-top:-12px">Product metrics as reported by <a href="https://accuristech.com/engineering-intelligence/accuris-thread/" style="text-decoration:underline">Accuris</a>.</span>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:auto">
+        <a href="thread.html" style="padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)">View case study</a>
+        <a href="https://accuristech.com/engineering-intelligence/accuris-thread/" style="display:flex;align-items:center;gap:6px;padding:13px 18px;font-weight:500;font-size:15px"><span class="ms" style="font-size:20px">arrow_forward</span>View live product</a>
+      </div>
+    </div>
+    <div style="background:#1F1F1D;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:320px">
+      <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/19345d8a-af5c-49a7-b019-dd5f18e91000_car_16x9.png?h=cc63949c53559c3349a96d4bdebb616e" alt="Accuris Thread screens" style="width:100%;max-width:560px;border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);display:block">
+    </div>
+  </article>
+
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:22px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Accuris · 2024</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Smart Search: finding requirements in long engineering documents</h3>
+      <p style="margin:0;font-size:17px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">A new search feature for an existing platform, with in-document highlighting, filters for format and page range, and keyword search you can drive from the keyboard.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Beta to launch</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Search &amp; filtering</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Web</span>
+      </div>
+      <div style="display:flex;gap:16px;padding:6px 0;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;letter-spacing:-.03em">70%</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">LESS TIME SEARCHING IN-DOCUMENT</span></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;letter-spacing:-.03em">2.8M+</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">STANDARDS SEARCHABLE</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:auto">
+        <a href="smart-search.html" style="padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)">View case study</a>
+      </div>
+    </div>
+    <div style="background:#1F1F1D;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:320px">
+      <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/3c99ba6f-d928-4b60-97f5-53f18ddfcbce_car_16x9.png?h=7c658a10878dfb3a75e6260e72b61ad2" alt="Accuris Smart Search screens" style="width:100%;max-width:560px;border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);display:block">
+    </div>
+  </article>
+
+  <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-radius:28px;overflow:hidden;background:#1A1A18;border:1px solid rgba(255,255,255,.08)">
+    <div style="padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:22px">
+      <span style="font-size:14px;font-weight:600;color:#8E8E89">Focus: HOPE · 2020</span>
+      <h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;letter-spacing:-.025em;text-wrap:balance">Designing a learning dashboard for a Detroit nonprofit</h3>
+      <p style="margin:0;font-size:17px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">The first version of a new Learning Dashboard, made for a showcase with Microsoft and consultant partners.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Dashboard design</span>
+        <span style="padding:6px 12px;border-radius:999px;background:#262623;font-size:13px;font-weight:500">Nonprofit</span>
+      </div>
+      <div style="display:flex;gap:40px;padding:6px 0">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.03em">Microsoft</span><span style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#8E8E89">PARTNER SHOWCASE</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:auto">
+        <a href="focus-hope.html" style="padding:13px 22px;border-radius:999px;background:#56CFE1;color:#0B0B0C;font-weight:500;font-size:15px" style-hover="background:#FAFAFA;color:#0B0B0C;box-shadow:0 0 20px rgba(86,207,225,.4)">View case study</a>
+      </div>
+    </div>
+    <div style="background:#1F1F1D;padding:clamp(24px,4vw,48px);display:flex;align-items:center;justify-content:center;min-height:320px">
+      <img src="https://cdn.myportfolio.com/f164b0bd-96ca-4410-b7a8-d3e1ab2680c1/d8c11e22-a5d5-4c00-abfd-29b74444ac90_car_16x9.png?h=545e64505525b7a585f0625c4474ecc3" alt="Focus: HOPE Learning Dashboard" style="width:100%;max-width:560px;border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);display:block">
+    </div>
+  </article>
+
+  <sc-if value="{{ showMore }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;gap:16px;padding-top:16px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:#8E8E89">MORE WORK</span>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px">
+        <a href="style-guide.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;border-radius:18px;background:#1A1A18;border:1px solid rgba(255,255,255,.08)" style-hover="border-color:#FAFAFA"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:17px">Focus: HOPE Style Guide</span><span style="font-size:14px;color:#8E8E89">2020 · Canva</span></span><span class="ms" style="font-size:22px">arrow_forward</span></a>
+        <a href="phaser.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;border-radius:18px;background:#1A1A18;border:1px solid rgba(255,255,255,.08)" style-hover="border-color:#FAFAFA"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:17px">Angular Phaser Game Launcher</span><span style="font-size:14px;color:#8E8E89">2020 · Angular</span></span><span class="ms" style="font-size:22px">arrow_forward</span></a>
+        <a href="movie-app.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;border-radius:18px;background:#1A1A18;border:1px solid rgba(255,255,255,.08)" style-hover="border-color:#FAFAFA"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:17px">Angular Movie App</span><span style="font-size:14px;color:#8E8E89">2020 · Angular</span></span><span class="ms" style="font-size:22px">arrow_forward</span></a>
+      </div>
+    </div>
+  </sc-if>
+</section>
+
+<section style="background:#0B0B0C;color:#FAFAFA">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 32px;display:flex;flex-direction:column;gap:44px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56CFE1"><span class="ms" style="font-size:20px">task_alt</span>Why me?</span>
+      <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1.05">My key strengths</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:40px 48px">
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">design_services</span><h3 style="margin:0;font-size:20px;font-weight:600">UX &amp; UI design</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Design based on research: competitive analysis, interviews, personas, journeys, and hi-fi flows.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">code</span><h3 style="margin:0;font-size:20px;font-weight:600">Front-end development</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">I've built with Angular, React, and the rest of the front-end web stack, so my designs are realistic to build and easy to hand off.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">auto_awesome</span><h3 style="margin:0;font-size:20px;font-weight:600">AI-assisted prototyping</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">I go back and forth between Claude Code and Figma via MCP to get to interactive hi-fi prototypes with much less manual work.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">dashboard</span><h3 style="margin:0;font-size:20px;font-weight:600">Making complex software easier</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Enterprise search, upload workflows, and dashboards that make dense information readable.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">palette</span><h3 style="margin:0;font-size:20px;font-weight:600">Design systems</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">Style guides, local components, and design tokens that keep products consistent as they grow.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="ms" style="font-size:30px;color:#56CFE1">verified</span><h3 style="margin:0;font-size:20px;font-weight:600">Standards &amp; best practices</h3><p style="margin:0;font-size:16px;line-height:1.6;color:#B5B5B0;text-wrap:pretty">I follow established design and accessibility standards so products work for more people and behave the way users expect.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="border-top:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:40px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Garrett Brown</span><span style="font-size:14px;color:#8E8E89">Front-end &amp; UX designer · Freelance</span></div>
+    <div style="display:flex;gap:24px;font-size:14px;font-weight:500;flex-wrap:wrap">
+      <a href="#top">Home</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1P9hcWMsyY4DFqL5BCw6-sNWc8hlK5oxv/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-size:14px;color:#8E8E89"><a href="mailto:garrett.brown944@gmail.com">garrett.brown944@gmail.com</a><a href="https://www.linkedin.com/in/garrettbrowndev/">LinkedIn</a><span>© 2026 – Garrett Brown</span></div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;rotate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;speed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3,&quot;min&quot;:1.5,&quot;max&quot;:6,&quot;step&quot;:0.5,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;line1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I am a front-end &amp; UX designer&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;line2&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I make complex software easy to use&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;line3&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I design around real users&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;line4&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I prototype with Claude Code &amp; Figma&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;line5&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I build what I design&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;line6&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Carousel text&quot;},&quot;showMore&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Case studies&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0 };
+  defaults = [
+    "I am a front-end & UX designer",
+    "I make complex software easy to use",
+    "I design around real users",
+    "I prototype with Claude Code & Figma",
+    "I build what I design",
+    "I am currently freelancing"
+  ];
+  get lines() {
+    const l = this.defaults.map((d, k) => this.props['line' + (k + 1)] ?? d).filter(t => t && t.trim());
+    return l.length ? l : [this.defaults[0]];
+  }
+  componentDidMount() { this.start(); }
+  componentDidUpdate(p) { if (p.rotate !== this.props.rotate || p.speed !== this.props.speed) this.start(); }
+  componentWillUnmount() { clearInterval(this.t); }
+  start() {
+    clearInterval(this.t);
+    if (this.props.rotate === false) { this.setState({ i: 0 }); return; }
+    this.t = setInterval(() => this.setState(s => ({ i: (s.i + 1) % this.lines.length })), (this.props.speed ?? 3) * 1000);
+  }
+  renderVals() {
+    const i = this.state.i;
+    return {
+      lines: this.lines.map((text, k) => ({ text, o: k === i ? 1 : 0, y: k === i ? 0 : (k < i ? -18 : 18) })),
+      showMore: this.props.showMore ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
